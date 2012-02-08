@@ -1,12 +1,12 @@
-# revision 23994
+# revision 25283
 # category Package
 # catalog-ctan /macros/xetex/latex/xecjk
-# catalog-date 2011-09-17 09:49:09 +0200
+# catalog-date 2012-02-01 14:05:15 +0100
 # catalog-license lppl
-# catalog-version 2.4.4
+# catalog-version 2.4.5
 Name:		texlive-xecjk
-Version:	2.4.4
-Release:	2
+Version:	2.4.5
+Release:	1
 Summary:	Support for CJK documents in XeLaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/xecjk
