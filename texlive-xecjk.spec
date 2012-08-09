@@ -1,11 +1,11 @@
-# revision 25283
+# revision 27119
 # category Package
 # catalog-ctan /macros/xetex/latex/xecjk
-# catalog-date 2012-02-01 14:05:15 +0100
+# catalog-date 2012-07-20 19:39:58 +0200
 # catalog-license lppl
-# catalog-version 2.4.5
+# catalog-version 3.0.7
 Name:		texlive-xecjk
-Version:	2.4.5
+Version:	3.0.7
 Release:	1
 Summary:	Support for CJK documents in XeLaTeX
 Group:		Publishing
@@ -35,15 +35,11 @@ have become used to, in the CJK package.
 %files
 %{_texmfdistdir}/tex/xelatex/xecjk/xeCJK.sty
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/README
-%doc %{_texmfdistdir}/doc/xelatex/xecjk/README.txt
-%doc %{_texmfdistdir}/doc/xelatex/xecjk/example-CJKchecksingle.tex
-%doc %{_texmfdistdir}/doc/xelatex/xecjk/example-CJKfntef.tex
-%doc %{_texmfdistdir}/doc/xelatex/xecjk/example-addspaces.tex
-%doc %{_texmfdistdir}/doc/xelatex/xecjk/example-fallback.tex
-%doc %{_texmfdistdir}/doc/xelatex/xecjk/examples/example-CJKchecksingle.tex
-%doc %{_texmfdistdir}/doc/xelatex/xecjk/examples/example-CJKfntef.tex
-%doc %{_texmfdistdir}/doc/xelatex/xecjk/examples/example-addspaces.tex
-%doc %{_texmfdistdir}/doc/xelatex/xecjk/examples/example-fallback.tex
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-CJKecglue.tex
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-autofake.tex
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-checksingle.tex
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-fallback.tex
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-subCJKblock.tex
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/xeCJK.pdf
 #- source
 %doc %{_texmfdistdir}/source/xelatex/xecjk/xeCJK.dtx
