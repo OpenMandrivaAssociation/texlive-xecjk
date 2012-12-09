@@ -1,11 +1,11 @@
-# revision 27996
+# revision 27119
 # category Package
 # catalog-ctan /macros/xetex/latex/xecjk
-# catalog-date 2012-09-03 11:02:31 +0200
+# catalog-date 2012-07-20 19:39:58 +0200
 # catalog-license lppl
-# catalog-version 3.0.8
+# catalog-version 3.0.7
 Name:		texlive-xecjk
-Version:	3.0.8
+Version:	3.0.7
 Release:	1
 Summary:	Support for CJK documents in XeLaTeX
 Group:		Publishing
@@ -54,3 +54,24 @@ have become used to, in the CJK package.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.0.7-1
++ Revision: 813182
+- Update to latest release.
+
+* Wed Feb 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.4.5-1
++ Revision: 772177
+- Update to latest release.
+
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.4.4-2
++ Revision: 757587
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.4.4-1
++ Revision: 719922
+- texlive-xecjk
+- texlive-xecjk
+- texlive-xecjk
+
