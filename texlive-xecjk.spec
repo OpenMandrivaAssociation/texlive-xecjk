@@ -1,11 +1,11 @@
-# revision 27119
+# revision 31466
 # category Package
 # catalog-ctan /macros/xetex/latex/xecjk
-# catalog-date 2012-07-20 19:39:58 +0200
+# catalog-date 2013-08-18 08:32:01 +0200
 # catalog-license lppl
-# catalog-version 3.0.7
+# catalog-version 3.2.6
 Name:		texlive-xecjk
-Version:	3.0.7
+Version:	3.2.6
 Release:	1
 Summary:	Support for CJK documents in XeLaTeX
 Group:		Publishing
@@ -21,7 +21,9 @@ Requires(post):	texlive-kpathsea
 
 %description
 A LaTeX package for typesetting CJK documents in the way users
-have become used to, in the CJK package.
+have become used to, in the CJK package. The package requires a
+current version of xtemplate (and hence of the current LaTeX 3
+development environment.
 
 %post
     %{_sbindir}/texlive.post
@@ -33,13 +35,30 @@ have become used to, in the CJK package.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/fonts/misc/xetex/fontmapping/xecjk/full-stop.map
+%{_texmfdistdir}/fonts/misc/xetex/fontmapping/xecjk/full-stop.tec
+%{_texmfdistdir}/fonts/misc/xetex/fontmapping/xecjk/fullwidth-stop.map
+%{_texmfdistdir}/fonts/misc/xetex/fontmapping/xecjk/fullwidth-stop.tec
+%{_texmfdistdir}/fonts/misc/xetex/fontmapping/xecjk/han-simp.map
+%{_texmfdistdir}/fonts/misc/xetex/fontmapping/xecjk/han-simp.tec
+%{_texmfdistdir}/fonts/misc/xetex/fontmapping/xecjk/han-trad.map
+%{_texmfdistdir}/fonts/misc/xetex/fontmapping/xecjk/han-trad.tec
+%{_texmfdistdir}/tex/xelatex/xecjk/config/xeCJK.cfg
+%{_texmfdistdir}/tex/xelatex/xecjk/xeCJK-listings.sty
 %{_texmfdistdir}/tex/xelatex/xecjk/xeCJK.sty
+%{_texmfdistdir}/tex/xelatex/xecjk/xeCJKfntef.sty
+%{_texmfdistdir}/tex/xelatex/xecjk/xunicode-addon.sty
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/README
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-CJKecglue.tex
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-CJKfntef.tex
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-IVS.tex
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-autofake.tex
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-checksingle.tex
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-fallback.tex
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-listings.tex
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-punctstyle.tex
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-subCJKblock.tex
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-verbatim.tex
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/xeCJK.pdf
 #- source
 %doc %{_texmfdistdir}/source/xelatex/xecjk/xeCJK.dtx
@@ -53,25 +72,4 @@ have become used to, in the CJK package.
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 3.0.7-1
-+ Revision: 813182
-- Update to latest release.
-
-* Wed Feb 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.4.5-1
-+ Revision: 772177
-- Update to latest release.
-
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.4.4-2
-+ Revision: 757587
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.4.4-1
-+ Revision: 719922
-- texlive-xecjk
-- texlive-xecjk
-- texlive-xecjk
-
+cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
