@@ -1,11 +1,11 @@
-# revision 31466
+# revision 32149
 # category Package
 # catalog-ctan /macros/xetex/latex/xecjk
-# catalog-date 2013-08-18 08:32:01 +0200
+# catalog-date 2013-11-12 00:41:31 +0100
 # catalog-license lppl
-# catalog-version 3.2.6
+# catalog-version 3.2.7
 Name:		texlive-xecjk
-Version:	3.2.6
+Version:	3.2.7
 Release:	1
 Summary:	Support for CJK documents in XeLaTeX
 Group:		Publishing
