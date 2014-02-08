@@ -6,7 +6,7 @@
 # catalog-version 3.0.7
 Name:		texlive-xecjk
 Version:	3.0.7
-Release:	1
+Release:	2
 Summary:	Support for CJK documents in XeLaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/xecjk
