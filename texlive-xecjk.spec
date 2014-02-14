@@ -1,12 +1,12 @@
-# revision 32149
+# revision 32510
 # category Package
 # catalog-ctan /macros/xetex/latex/xecjk
-# catalog-date 2013-11-12 00:41:31 +0100
+# catalog-date 2013-12-30 15:53:20 +0100
 # catalog-license lppl
-# catalog-version 3.2.7
+# catalog-version 3.2.9
 Name:		texlive-xecjk
-Version:	3.2.7
-Release:	5
+Version:	3.2.9
+Release:	1
 Summary:	Support for CJK documents in XeLaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/xecjk
@@ -48,6 +48,7 @@ development environment.
 %{_texmfdistdir}/tex/xelatex/xecjk/xeCJK.sty
 %{_texmfdistdir}/tex/xelatex/xecjk/xeCJKfntef.sty
 %{_texmfdistdir}/tex/xelatex/xecjk/xunicode-addon.sty
+%{_texmfdistdir}/tex/xelatex/xecjk/xunicode-extra.def
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/README
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-CJKecglue.tex
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-CJKfntef.tex
@@ -59,7 +60,11 @@ development environment.
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-punctstyle.tex
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-subCJKblock.tex
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xeCJK-example-verbatim.tex
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xunicode-combine-marks.tex
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xunicode-commands.tex
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/example/xunicode-symbols.tex
 %doc %{_texmfdistdir}/doc/xelatex/xecjk/xeCJK.pdf
+%doc %{_texmfdistdir}/doc/xelatex/xecjk/xunicode-symbols.pdf
 #- source
 %doc %{_texmfdistdir}/source/xelatex/xecjk/xeCJK.dtx
 %doc %{_texmfdistdir}/source/xelatex/xecjk/xeCJK.ins
