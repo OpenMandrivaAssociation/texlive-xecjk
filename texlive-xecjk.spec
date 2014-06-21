@@ -1,12 +1,12 @@
-# revision 33074
+# revision 34111
 # category Package
 # catalog-ctan /macros/xetex/latex/xecjk
-# catalog-date 2014-02-27 21:21:59 +0100
+# catalog-date 2014-05-17 22:15:48 +0200
 # catalog-license lppl
-# catalog-version 3.2.10
+# catalog-version 3.2.12
 Name:		texlive-xecjk
-Version:	3.2.10
-Release:	2
+Version:	3.2.12
+Release:	1
 Summary:	Support for CJK documents in XeLaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/xecjk
@@ -23,7 +23,7 @@ Requires(post):	texlive-kpathsea
 A LaTeX package for typesetting CJK documents in the way users
 have become used to, in the CJK package. The package requires a
 current version of xtemplate (and hence of the current LaTeX 3
-development environment.
+development environment).
 
 %post
     %{_sbindir}/texlive.post
