@@ -1,5 +1,5 @@
 Name:		texlive-xecjk
-Version:	3.5.1
+Version:	3.6.0
 Release:	1
 Summary:	Support for CJK documents in XeLaTeX
 Group:		Publishing
