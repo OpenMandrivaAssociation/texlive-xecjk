@@ -1,6 +1,6 @@
 Name:		texlive-xecjk
-Version:	3.7.1
-Release:	2
+Version:	3.7.2
+Release:	1
 Summary:	Support for CJK documents in XeLaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/xecjk
