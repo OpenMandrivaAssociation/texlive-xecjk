@@ -3,7 +3,7 @@ Version:	64059
 Release:	2
 Summary:	Support for CJK documents in XeLaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/xetex/latex/xecjk
+URL:		https://www.ctan.org/tex-archive/macros/xetex/latex/xecjk
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xecjk.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xecjk.doc.r%{version}.tar.xz
