@@ -1,47 +1,29 @@
-Name:		texlive-xecjk
-Version:	64059
-Release:	2
+%global tl_name xecjk
+%global tl_revision 79564
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	3.10.1
+Release:	%{tl_revision}.1
 Summary:	Support for CJK documents in XeLaTeX
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/xetex/latex/xecjk
-License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xecjk.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xecjk.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/xecjk.source.r%{version}.tar.xz
+License:	lppl1.3c
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/xecjk.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/xecjk.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/xecjk.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Requires:	texlive(ctex)
+Requires:	texlive(fontspec)
+Requires:	texlive(l3kernel)
+Requires:	texlive(l3packages)
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-A LaTeX package for typesetting CJK documents in the way users
-have become used to, in the CJK package. The package requires a
-current version of xtemplate (and hence of the current LaTeX 3
-development environment).
+xeCJK is a package for typesetting documents in Chinese, Japanese or
+Korean with XeLaTeX. It provides CJK-specific automatic glue between CJK
+and non-CJK characters, full control over CJK punctuation compression,
+separate font families for CJK and Latin scripts, and a number of fine-
+grained typographic refinements for the CJK script.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/fonts/misc/xetex/fontmapping/xecjk
-%{_texmfdistdir}/tex/xelatex/xecjk
-%doc %{_texmfdistdir}/doc/xelatex/xecjk
-#- source
-%doc %{_texmfdistdir}/source/xelatex/xecjk
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
