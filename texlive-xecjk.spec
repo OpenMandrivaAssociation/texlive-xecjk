@@ -1,11 +1,11 @@
 %global tl_name xecjk
-%global tl_revision 79660
+%global tl_revision 79774
 
 Name:		texlive-%{tl_name}
 Epoch:		1
-Version:	3.10.2
+Version:	3.10.4
 Release:	%{tl_revision}.1
-Summary:	Support for CJK documents in XeLaTeX
+Summary:	Typeset CJK in XeLaTeX
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/xetex/latex/xecjk
 License:	lppl1.3c
