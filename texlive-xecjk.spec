@@ -1,9 +1,10 @@
 %global tl_name xecjk
-%global tl_revision 79774
+%global tl_revision 79910
+%global tl_version 3.10.5
 
 Name:		texlive-%{tl_name}
 Epoch:		1
-Version:	3.10.4
+Version:	%{tl_version}
 Release:	%{tl_revision}.1
 Summary:	Typeset CJK in XeLaTeX
 Group:		Publishing
@@ -18,7 +19,7 @@ Requires:	texlive(ctex)
 Requires:	texlive(fontspec)
 Requires:	texlive(l3kernel)
 Requires:	texlive(l3packages)
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 xeCJK is a package for typesetting documents in Chinese, Japanese or
